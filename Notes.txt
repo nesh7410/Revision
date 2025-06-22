@@ -1,1 +1,23 @@
-npm create@vite
+npm create vite INSIDE CLIENT FOLDER
+
+npm init -y INSIDE ROOT FOLDER  -- gives only package.json
+create API FOLDER , INSIDE IT CREATE INDEX.JS
+npm i express AT ROOT -- gives node_modules
+npm i nodemon ---- add scripts
+git init AT ROOT ---- take care of gitignore
+npm i mongoose, dotenv
+
+
+
+node.js 
+-> Node.js is a runtime environment that allows to run JavaScript code outside of a browser
+-> To build backend/server-side applications
+
+express.js
+-> framework for Node.js — it simplifies building web applications and APIs.
+-> To simplify writing routes, handling HTTP requests/responses.
+-> Built-in support for middleware (like logging, auth, error handling).
+
+
+
+
