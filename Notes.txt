@@ -18,6 +18,16 @@ express.js
 -> To simplify writing routes, handling HTTP requests/responses.
 -> Built-in support for middleware (like logging, auth, error handling).
 
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+<BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
 
 
 
