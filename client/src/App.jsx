@@ -1,23 +1,18 @@
 import React, { useState } from 'react'
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
-  const [color, setColor] = useState("red");
-  const colors = ["red", "green", "blue", "yellow", "purple"];
-  const randomColor = () => {
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    return colors[randomIndex];
-  };
 
   return (
-    <div style={{ backgroundColor: color, minHeight: "100vh" }}>
-      <header className="bg-gray-800 text-white p-4">
-        <h1 className="text-3xl font-bold">My Application</h1>
-      </header>
-      <p>{color}</p>
-      <button onClick={() => setColor(randomColor())} >Click here</button>
-    </div>
-
-    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
