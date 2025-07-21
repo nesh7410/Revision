@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
+import Form from './pages/Form.jsx'
+import NoPage from './pages/NoPage.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -10,7 +11,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   )
